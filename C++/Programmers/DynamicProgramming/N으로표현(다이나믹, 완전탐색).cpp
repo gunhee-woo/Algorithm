@@ -101,7 +101,7 @@ int main() {
 
 // 재귀, dp 메모이제이션을 사용한 코드
 
-/*#include <string>
+#include <string>
 #include <vector>
 #include <unordered_set>
 
@@ -138,4 +138,4 @@ int solution(int _N, int number) {
 		if (cache[i].find(number) != cache[i].end()) return i;
 	}
 	return -1;
-}*/
+}
