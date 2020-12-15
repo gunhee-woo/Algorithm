@@ -1,7 +1,10 @@
+import Util.Constants;
+
 import java.io.*;
 
+import static Util.Constants.INPUT;
+
 public class CodingTip {
-    static final String INPUT = "c:/Users/Gun/Algorithm/Algorithm/Java/src/main/java/text.txt";
 
     public static void main(String[] args) throws Exception{
         base();

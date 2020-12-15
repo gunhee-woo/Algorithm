@@ -4,9 +4,10 @@ import java.io.*;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
+import static Util.Constants.INPUT;
+
+// 실버 4
 public class Stack_10828 { // 제출하기 전 Main으로 클래스 명 변경할 것
-    // 제출하기 전 주석처리
-    static final String INPUT = "c:/Users/Gun/Algorithm/Algorithm/Java/src/main/java/text.txt";
     public static void main(String[] args) throws IOException {
         System.setIn(new FileInputStream(INPUT)); // 제출하기 전 주석처리
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
