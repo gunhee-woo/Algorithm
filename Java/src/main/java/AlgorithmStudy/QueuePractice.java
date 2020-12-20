@@ -1,4 +1,4 @@
-package DataStructure;
+package AlgorithmStudy;
 
 public class QueuePractice {
     int dat[] = new int[1000005];
@@ -18,5 +18,13 @@ public class QueuePractice {
 
     int back() {
         return dat[tail - 1];
+    }
+
+    boolean empty() {
+        return head == tail;
+    }
+
+    int size() {
+        return tail - head;
     }
 }

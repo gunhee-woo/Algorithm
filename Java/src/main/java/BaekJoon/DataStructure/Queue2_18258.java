@@ -1,4 +1,4 @@
-package BaekJoon.Queue;
+package BaekJoon.DataStructure;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
