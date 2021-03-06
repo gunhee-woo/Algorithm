@@ -8,7 +8,6 @@ import static Util.Constants.INPUT;
 // 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
 // 고른 수열은 오름차순이어야 한다.
 public class n과m2_15650 {
-    static int MAX = 9;
     static int N, M;
     static int[] arr;
     static boolean[] check;
