@@ -5,12 +5,13 @@ import java.util.Scanner;
 
 import static Util.Constants.INPUT;
 
+// 조합 (순서가 없고 중복 X)
 // 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
 // 고른 수열은 오름차순이어야 한다.
 public class n과m2_15650 {
     static int N, M;
-    static int[] arr;
-    static boolean[] check;
+    static int[] arr; // 출력할 수를 담는 자료구조
+    static boolean[] check; // 해당 수를 사용했는지 체크
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         Scanner sc = new Scanner(System.in);
