@@ -13,29 +13,46 @@ public class sol1 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String N = br.readLine();
         dfs(N, 0);
+        System.out.print(min + " " + max);
     }
 
     static void dfs(String n, int c) {
-        if(n.length() == 1) {
-
-            return;
-        }
-        for(int i = 0; i < n.length(); i++) {
-            if(((n.charAt(i) - '0') % 2) != 0) { // È¦¼ö
-                c++;
-            }
-        }
+        c += countOddNum(n);
         if(n.length() >= 3) {
             for(int i = 1; i < n.length() - 1; i++) {
-                dfs(n.substring(0, i), c);
                 for(int j = i + 1; j < n.length(); j++) {
-                    dfs(n.substring(i, j), c);
-                    dfs(n.substring(j, j + 1), c);
+                    String s1 = n.substring(0, i);
+                    String s2 = n.substring(i, j);
+                    String s3 = n.substring(j, n.length());
+                    int r = Integer.parseInt(s1) + Integer.parseInt(s2) + Integer.parseInt(s3);
+//                    print(r + " " + c);
+                    dfs(String.valueOf(r), c);
                 }
             }
         }
         if(n.length() == 2) {
-
+            int r = Integer.parseInt(n.substring(0, 1)) + Integer.parseInt(n.substring(1, 2));
+//            print(r + " " + c);
+            dfs(String.valueOf(r), c);
         }
+        if(n.length() == 1) {
+//            print(n + " " + c);
+            min = Math.min(min, c);
+            max = Math.max(max, c);
+        }
+    }
+
+    static int countOddNum(String s) {
+        int c = 0;
+        for(int i = 0; i < s.length(); i++) {
+            if(((s.charAt(i) - '0') % 2) != 0) {
+                c++;
+            }
+        }
+        return c;
+    }
+
+    static void print(Object o) {
+        System.out.println(o);
     }
 }
