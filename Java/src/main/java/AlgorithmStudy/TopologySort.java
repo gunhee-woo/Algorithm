@@ -51,7 +51,7 @@ public class TopologySort {
         topologicalSort(inDegree, arr);
     }
 
-    static void topologicalSort(int[] inDegree, List<List<Integer>> arr) {
+    private static void topologicalSort(int[] inDegree, List<List<Integer>> arr) {
         Queue<Integer> q = new LinkedList<>();
         Queue<Integer> result = new LinkedList<>();
 

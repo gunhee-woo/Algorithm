@@ -44,17 +44,16 @@ public class tree_1068 {
             while(!q.isEmpty()) {
                 int cv = q.peek();
                 q.poll();
-                if(arr[cv].isEmpty()){
-                    count++;
-                    continue;
-                }
+                int child = 0;
                 for(int i = 0; i < arr[cv].size(); i++) {
                     int next = arr[cv].get(i);
                     if(!check[next]) {
                         q.add(next);
                         check[next] = true;
+                        child++;
                     }
                 }
+                if(child == 0) count++;
             }
         }
         System.out.print(count);

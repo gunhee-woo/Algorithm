@@ -3,7 +3,7 @@ import java.util.StringTokenizer;
 
 import static Util.Constants.INPUT;
 
-public class Main {
+public class Base {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
