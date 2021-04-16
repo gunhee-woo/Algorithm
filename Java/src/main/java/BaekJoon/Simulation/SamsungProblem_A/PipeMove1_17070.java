@@ -1,6 +1,5 @@
-package BaekJoon.SamsungProblem_A;
+package BaekJoon.Simulation.SamsungProblem_A;
 
-import javax.sound.sampled.Line;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
