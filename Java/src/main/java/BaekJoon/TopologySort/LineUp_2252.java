@@ -7,6 +7,7 @@ import java.util.*;
 
 import static Util.Constants.INPUT;
 
+// 대표적인 위상정렬
 public class LineUp_2252 {
     static int N, M;
     static int MAX = 32001;
