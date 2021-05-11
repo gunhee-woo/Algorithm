@@ -51,6 +51,7 @@ public class TreeTraversal_1991 {
         }
     }
 
+    // 중위 순회
     private static void inOrder(int x) {
         if(answer.length() == N) {
             return;
@@ -64,6 +65,7 @@ public class TreeTraversal_1991 {
         }
     }
 
+    // 후위 순회
     private static void postOrder(int x) {
         if(answer.length() == N) {
             return;

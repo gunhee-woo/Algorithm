@@ -72,7 +72,7 @@ public class Tetromino_14500 {
         max = Math.max(max, temp);
     }
 
-    static boolean figure4(int x, int y) {
+    static void figure4(int x, int y) {
         int temp = map[x][y] + map[x + 1][y] + map[x + 1][y + 1] + map[x + 1][y + 2];
         max = Math.max(max, temp);
     }

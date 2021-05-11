@@ -44,11 +44,7 @@ public class JuvenileShark_19236 {
     }
 
     private static void dfs(int sum) {
-        if() {
 
-            return;
-        }
-        dfs();
     }
 
     private static void moveFish() {

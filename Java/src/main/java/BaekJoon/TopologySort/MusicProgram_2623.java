@@ -7,7 +7,7 @@ import java.util.*;
 
 import static Util.Constants.INPUT;
 
-// 위상정렬 + 그리디
+// 위상정렬 + 그리디 => 적절한 알고리즘을 통해 그래프를 구성해야 함
 public class MusicProgram_2623 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));

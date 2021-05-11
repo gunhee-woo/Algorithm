@@ -7,7 +7,7 @@ import java.util.*;
 
 import static Util.Constants.INPUT;
 
-// 위상정렬 + 초급 DP
+// 위상정렬 + DP
 public class ACMCraft_1005 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
