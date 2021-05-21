@@ -1,4 +1,4 @@
-package BaekJoon.SamsungProblem_A;
+package BaekJoon.Simulation.SamsungProblem_A;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
