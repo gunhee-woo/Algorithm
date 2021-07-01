@@ -1,4 +1,4 @@
-package BaekJoon;
+package BaekJoon.Simulation;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
