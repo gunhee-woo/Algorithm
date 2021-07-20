@@ -1,4 +1,4 @@
-package BaekJoon.BellManFord;
+package BaekJoon.ShortestPath.BellManFord;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

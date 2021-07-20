@@ -1,4 +1,4 @@
-package BaekJoon.Dijkastra;
+package BaekJoon.ShortestPath.Dijkastra;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

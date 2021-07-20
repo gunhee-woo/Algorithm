@@ -1,7 +1,6 @@
+package AlgorithmStudy;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class SortTip {
     static int[] intArr = {5, 8, 7, 9, 1, 3, 2, 6, 4, 0};
@@ -103,5 +102,46 @@ public class SortTip {
         // 내림차순
         Arrays.sort(p, descendingComparator);
         for(int i = 0; i < p.length; i++) System.out.println(p[i].age + " " + p[i].name);
+    }
+
+    private static void comparableSort() {
+        List<Point> list = new ArrayList<>();
+        Point p1 = new Point(9, 1);
+        list.add(p1);
+        Point p2 = new Point(5, 5);
+        list.add(p2);
+        Point p4 = new Point(5, 6);
+        list.add(p4);
+        Point p3 = new Point(1, 9);
+        list.add(p3);
+        Collections.sort(list);
+        for(int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i).x + " " + list.get(i).y);
+        }
+    }
+
+    public static class Point implements Comparable<Point>{
+        int x;
+        int y;
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        // 리턴값이 양수이면 자리바뀜 음수나 0이면 그대로 유지
+//        @Override
+//        public int compareTo(Point o) {
+//            if(this.x < o.x) return 1; // 내림차순
+//            else if(this.x == o.x) {
+//                if(this.y > o.y) return 1; // 오름차순
+//            }
+//            return -1;
+//        }
+
+        @Override
+        public int compareTo(Point o) {
+            if(this.x == o.x) return o.y - this.y;
+            else return this.x - o.x;
+        }
     }
 }

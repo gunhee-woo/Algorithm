@@ -8,10 +8,11 @@ import static Util.Constants.INPUT;
 public class CodingTip {
 
     public static void main(String[] args) throws Exception{
-        base();
-        stringOneWordChange();
-        init2DArrayByUseStream();
-        changeStringArrayToIntArrayByUseStream();
+//        base();
+//        stringOneWordChange();
+//        init2DArrayByUseStream();
+//        changeStringArrayToIntArrayByUseStream();
+        mathUse();
     }
 
     // 자바 코딩테스트 기본 필수적인 코드
@@ -55,5 +56,25 @@ public class CodingTip {
         // mapToInt를 사용하여 int형으로 형 변환 그리고 사전 순 정렬 후 int 배열로 만듬
         int[] arr = Arrays.stream(str).mapToInt(Integer::parseInt).sorted().toArray();
         Arrays.stream(arr).forEach(it -> System.out.print(it + " "));
+    }
+
+    private static void mathUse() {
+        // 1. 올림, 소수점 둘째자리까지
+        double val = 3.14156789;
+        System.out.println(Math.ceil(val * 100) / 100.0);
+        // 2. 반올림, 소수점 셋째자리까지
+        System.out.println(Math.round(val * 1000) / 1000.0);
+        // 3. 버림, 소수점 첫째자리까지
+        System.out.println(Math.floor(val * 10) / 10.0);
+        // 4. String.format
+        // Math.round 함수는 소수점아래가 0일 경우 절삭하지만 String.format 은 그대로 리턴
+        System.out.println(String.format("%.2f", val));
+        System.out.println(String.format("%.3f", val));
+
+        double val2 = Math.floor(val);
+        // 루트
+        System.out.println(Math.sqrt(val2));
+        // 제곱
+        System.out.println(Math.pow(val2, 2));
     }
 }
