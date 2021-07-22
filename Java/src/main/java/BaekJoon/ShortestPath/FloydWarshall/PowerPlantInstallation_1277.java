@@ -1,4 +1,4 @@
-package BaekJoon.ShortestPath;
+package BaekJoon.ShortestPath.FloydWarshall;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
