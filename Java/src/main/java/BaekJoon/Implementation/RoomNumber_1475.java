@@ -1,4 +1,4 @@
-package BaekJoon.basic;
+package BaekJoon.Implementation;
 
 import java.io.FileInputStream;
 import java.util.Arrays;

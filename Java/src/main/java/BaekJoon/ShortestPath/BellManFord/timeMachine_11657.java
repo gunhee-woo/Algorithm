@@ -19,6 +19,11 @@ import static Util.Constants.INPUT;
 // 만약 그래프에 음의 싸이클이 존재한다면 그 이후에 루프를 돌 경우 최단거리가 갱신되는 일이 발생함
 // 따라서 음의 싸이클의 존재 여부를 판단하기 위해 맨 마지막에 확인차 루프를 한 번 더 돌려 최단거리가 갱신되는지 확인
 // 만약 갱신이 된다면 음의 싸이클이 존재한다는 것
+
+// V - 1번 인접한 모든 간선들을 검사하는 과정을 거치므로 시간복잡도는 O(VE)
+// 다익스트라 알고리즘(O(ElogE))에 비해 시간복잡도가 크지만 음수 간선이 존재할 때 사용할 수 있다는 점과
+// 음수 사이클 존재 여부를 판별할 수 있다는점에서 유용하다
+
 public class timeMachine_11657 {
     static long INF = Long.MAX_VALUE;
     public static void main(String[] args) throws Exception{
