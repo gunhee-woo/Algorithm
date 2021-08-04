@@ -17,7 +17,7 @@ public class FindingTheMinimumCost2_11779 {
     static int[] d;
     static int INF = Integer.MAX_VALUE;
     static List<Node>[] list;
-    static int[] route; // route[i]는 이전 정점을 저장
+    static int[] route; // route[i]는 이전 정점을 저장, 경로 추적을 위함
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -61,7 +61,7 @@ public class FindingTheMinimumCost2_11779 {
         System.out.println(d[end]);
         List<Integer> nodes = new ArrayList<>();
         int temp = end;
-        while(true) {
+        while(true) { // 경로 추적
             nodes.add(temp);
             if(temp == start) break;
             temp = route[temp]; // 이전정점을 꺼냄
