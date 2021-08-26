@@ -14,13 +14,8 @@ import static Util.Constants.INPUT;
 // 이 문제에서는 시작점이 주어지지 않고 음수 싸이클이 존재하냐
 // 만약 모든 정점을 시작점으로 루프를 돌리면 시간 초과
 
-// d[j] != INF 이 조건을 제거해야 함
-// d[j] != INF => 이 조건에 인해 그냥 지나치게 된다면 뒤에 있는 Cycle의 존재 여부를 판단할 수 없음
-// 이 문제는 음수 싸이클이 존재한다는 것을 찾기만 하면 되므로 위 조건을 없애야 함
-// 반례
-// 1
-// 2 0 1
-// 2 2 1
+// d[j] != INF
+
 
 public class Wormhole_1865 {
     static int INF = Integer.MAX_VALUE;
@@ -34,7 +29,7 @@ public class Wormhole_1865 {
             int M = Integer.parseInt(st.nextToken());
             int W = Integer.parseInt(st.nextToken());
             int[] d = new int[N + 1];
-            Arrays.fill(d, INF);
+//            Arrays.fill(d, INF);
             List<Node>[] lists = new List[N + 1];
             for(int i = 1; i <= N; i++) lists[i] = new ArrayList<>();
             for(int i = 0; i < M; i++) {
@@ -59,9 +54,11 @@ public class Wormhole_1865 {
                     for(Node node : lists[j]) {
                         int next = node.end;
                         int nextTime = node.time;
-                        if(d[next] > d[j] + nextTime) {
-                            d[next] = d[j] + nextTime;
-                            if(i == N) isMinusCycle = true;
+                        if(d[j] != INF) {
+                            if(d[next] > d[j] + nextTime) {
+                                d[next] = d[j] + nextTime;
+                                if(i == N) isMinusCycle = true;
+                            }
                         }
                     }
                 }
