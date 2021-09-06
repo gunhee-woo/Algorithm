@@ -9,7 +9,7 @@ import static Util.Constants.INPUT;
 
 // stones 2, 4, 5, 3, 2, 1, 4, 2, 5, 1
 // k 3
-public class CrossingTheSteppingStone_2019_kakao_intern_4 {
+public class CrossingTheSteppingStone_2019_kakao_intern_5 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
