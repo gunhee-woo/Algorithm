@@ -1,5 +1,6 @@
 package AlgorithmStudy;
 
+// 에라토스테네스의 체
 public class Prime {
     public static void main(String[] args) {
         print(isPrime3(4) + " ");
