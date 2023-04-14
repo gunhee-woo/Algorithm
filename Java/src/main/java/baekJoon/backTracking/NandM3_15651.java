@@ -10,7 +10,7 @@ import static Util.Constants.INPUT;
 // 중복순열 (순서가 있고, 중복 O)
 // 1부터 N까지 자연수 중에서 M개를 고른 수열
 // 같은 수를 여러 번 골라도 된다.
-public class n과m3_15651 {
+public class NandM3_15651 {
     static int N, M;
     static int[] arr;
     static StringBuilder sb;

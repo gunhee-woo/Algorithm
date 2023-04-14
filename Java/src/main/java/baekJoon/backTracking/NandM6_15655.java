@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 import static Util.Constants.INPUT;
 
-public class n°úm6_15655 {
+public class NandM6_15655 {
     static int N, M;
     static StringBuilder sb;
     static int[] arr, value;

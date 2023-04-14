@@ -76,7 +76,7 @@ import static Util.Constants.INPUT;
 
 // 두 용액 + 새로운 용액
 // 세가지 용액이므로 최대 30억 => long 형 사용해야 함
-public class 세용액_2473 {
+public class Pro_2473 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

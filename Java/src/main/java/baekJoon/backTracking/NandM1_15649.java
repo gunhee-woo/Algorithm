@@ -7,7 +7,7 @@ import static Util.Constants.INPUT;
 
 // 순열 (순서가 있고 중복 X)
 // 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
-public class n과m1_15649 {
+public class NandM1_15649 {
     static int N, M;
     static int[] arr; // 수열을 담는 자료구조 => 크기를 M에 맞춤
     static boolean[] check; // 해당 수를 이전에 사용했는지 체크 => 크기를 N에 맞춤 => 문제에 중복없이라는 조건이 있으므로

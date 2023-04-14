@@ -10,7 +10,7 @@ import static Util.Constants.INPUT;
 // 투포인터 + 이분탐색
 // 이분탐색처럼 중간 값을 구하지는 않고 합이 0에 가깝도록 업데이트
 // 최대가 20억이므로 int 형으로 커버 할 수 있음
-public class 두용액_2470 {
+public class Pro_2470 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

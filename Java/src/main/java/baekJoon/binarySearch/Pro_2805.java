@@ -11,7 +11,7 @@ import static Util.Constants.INPUT;
 // 이분탐색 응용문제
 // 기준을 나무의 길이로 정해야 함
 // 주의할점 : 나무의 높이가 최대 1,000,000,000 이므로 int 형 범위를 넘어서기에 long 형으로 해야함
-public class 나무자르기_2805 {
+public class Pro_2805 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

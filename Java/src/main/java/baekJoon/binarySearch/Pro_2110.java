@@ -12,7 +12,7 @@ import static Util.Constants.INPUT;
 // 거리를 기준으로 이분탐색 실행
 // 최소거리는 1, 최대거리는 arr[n - 1] - arr[0]
 // 가운데 값을 기준으로 공유기를 C대 이상 설치할 수 있는지 체크
-public class 공유기설치_2110 {
+public class Pro_2110 {
     public static void main(String[] args) throws Exception{
         System.setIn(new FileInputStream(INPUT));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -10,7 +10,7 @@ import static Util.Constants.INPUT;
 
 // N개의 자연수 중에서 M개를 고른 수열
 // 같은 수를 여러 번 골라도 된다.
-public class n과m7_15656 {
+public class NandM7_15656 {
     static int N, M;
     static int[] arr, value;
     static StringBuilder sb;
