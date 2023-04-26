@@ -1,7 +1,6 @@
-package baekJoon.ShortestPath
+package baekJoon.ShortestPath.dijkstra
 
 import INPUT
-import printMatrix
 import java.io.FileInputStream
 import java.util.*
 

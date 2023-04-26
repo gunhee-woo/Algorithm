@@ -1,8 +1,6 @@
-package baekJoon.ShortestPath
+package baekJoon.ShortestPath.dijkstra
 
 import INPUT
-import printList
-import printMatrix
 import java.io.FileInputStream
 import java.util.*
 import kotlin.math.min
@@ -15,6 +13,7 @@ class PrisonBreak_9376 {
     private val ay = arrayOf(0, 0, -1, 1)
     private lateinit var map: Array<Array<String>>
     private lateinit var dp: Array<Array<Array<Int>>>
+    private val INF = 987654321
 
     fun solution() {
         System.setIn(FileInputStream(INPUT))
@@ -26,14 +25,14 @@ class PrisonBreak_9376 {
                 w = it[1]
             }
             map = Array(h + 2) { Array(w + 2) { "" } }
-            dp = Array(3) { Array(h + 2) { Array(w + 2) { Int.MAX_VALUE } } }
+            dp = Array(3) { Array(h + 2) { Array(w + 2) { INF } } }
             val start = mutableListOf<Triple<Int, Int, Int>>()
             repeat(h) { i ->
                 val line = br.readLine().map { it.toString() }
                 repeat(w) { j ->
                     map[i + 1][j + 1] = line[j]
                     if(line[j] == "$") {
-                        start.add(Triple(i, j, 0)) // 죄수 1, 2에서 길을 찾을 때
+                        start.add(Triple(i + 1, j + 1, 0)) // 죄수 1, 2에서 길을 찾을 때
                     }
                 }
             }
@@ -51,6 +50,15 @@ class PrisonBreak_9376 {
             }
 //            map.printMatrix()
 //            dp.printMatrix()
+//            for(i in 0 until 3) {
+//                for(j in 0 until h + 2) {
+//                    for(k in 0 until w + 2) {
+//                        print("${if(dp[i][j][k] == INF) 9 else dp[i][j][k]} ")
+//                    }
+//                    println()
+//                }
+//                println()
+//            }
             var result = Int.MAX_VALUE
             for(i in 1..h) {
                 for(j in 1..w) {

@@ -1,4 +1,4 @@
-package baekJoon.ShortestPath
+package baekJoon.ShortestPath.dijkstra
 
 import INPUT
 import printMatrix
